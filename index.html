@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задача 8 ферзів</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Задача 8 ферзів</h1>
+    <p>Виберіть позицію для кожного ферзя на шахівниці. Ферзі не повинні стояти на одній горизонталі, вертикалі чи діагоналі.</p>
+    <div class="board-container">
+        <div class="labels">
+            <div class="column-labels">
+                <div class="label"></div> <!-- for top-left corner -->
+                <div class="label">A</div>
+                <div class="label">B</div>
+                <div class="label">C</div>
+                <div class="label">D</div>
+                <div class="label">E</div>
+                <div class="label">F</div>
+                <div class="label">G</div>
+                <div class="label">H</div>
+            </div>
+            <div class="row-labels">
+                <div class="label">1</div>
+                <div class="label">2</div>
+                <div class="label">3</div>
+                <div class="label">4</div>
+                <div class="label">5</div>
+                <div class="label">6</div>
+                <div class="label">7</div>
+                <div class="label">8</div>
+            </div>
+        </div>
+        <div id="chessboard" class="chessboard"></div>
+    </div>
+
+    <button onclick="solve8Queens()">Розв'язати задачу</button>
+    <p>Позиції ферзів:</p>
+    <pre id="queensPositions">Немає ферзів на дошці.</pre>
+
+    <script src="script.js"></script>
+</body>
+</html>
